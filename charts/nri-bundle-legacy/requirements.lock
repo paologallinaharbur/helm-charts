@@ -16,10 +16,10 @@ dependencies:
   version: 2.13.2
 - name: nri-kube-events
   repository: file://../nri-kube-events
-  version: 1.13.0
+  version: 1.13.1
 - name: newrelic-logging
   repository: file://../newrelic-logging
-  version: 1.10.9
+  version: 1.10.10
 - name: newrelic-pixie
   repository: file://../newrelic-pixie
   version: 1.5.1
@@ -29,5 +29,5 @@ dependencies:
 - name: newrelic-infra-operator
   repository: file://../newrelic-infra-operator
   version: 0.6.0
-digest: sha256:f3ca82d3ed3079d7f0c13ee65e88b0160fbbeb86a19d52cd28c389d9606f2c5d
-generated: "2022-04-28T16:46:52.510581+02:00"
+digest: sha256:da2204742106b2b48576e03df0e8199e46748ccedf990c0a76192e8ff2ebfe10
+generated: "2022-04-28T18:36:07.19629+02:00"
