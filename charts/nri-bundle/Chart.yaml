@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: "1.0"
 description: A Helm chart to deploy New Relic integrations bundled together
 name: nri-bundle
-version: 4.0.6
+version: 4.0.7
 home: https://github.com/newrelic/helm-charts
 icon: https://newrelic.com/assets/newrelic/source/NewRelic-logo-square.svg
 maintainers:
@@ -44,7 +44,7 @@ dependencies:
   - name: nri-kube-events
     repository: file://../nri-kube-events
     condition: kubeEvents.enabled
-    version: 1.13.0
+    version: 1.13.1
 
   - name: newrelic-logging
     repository: file://../newrelic-logging
