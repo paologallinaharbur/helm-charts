@@ -7,7 +7,7 @@ dependencies:
   version: 1.14.0
 - name: nri-metadata-injection
   repository: file://../nri-metadata-injection
-  version: 2.2.0
+  version: 2.2.1
 - name: newrelic-k8s-metrics-adapter
   repository: https://newrelic.github.io/newrelic-k8s-metrics-adapter
   version: 0.7.3
@@ -29,5 +29,5 @@ dependencies:
 - name: newrelic-infra-operator
   repository: file://../newrelic-infra-operator
   version: 0.6.0
-digest: sha256:058f76c69aab4fea795bf3e5c5484cd4bda4d0a907d31b35a0cf6760b07b82bb
-generated: "2022-04-28T15:55:55.268331+02:00"
+digest: sha256:c9b486d262cee1b7dea2b81913a02e949695e6ac598dbaf82bb0411d73b0e602
+generated: "2022-04-28T16:47:14.092425+02:00"

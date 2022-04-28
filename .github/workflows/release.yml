@@ -55,14 +55,14 @@ jobs:
         run: |
           rm ./library/CHART-TEMPLATE/Chart.yaml
 
+      - name: Release workload charts
+        uses: helm/chart-releaser-action@v1.3.0
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
       - name: Release library charts
         uses: helm/chart-releaser-action@v1.3.0
         with:
           charts_dir: library
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Release workload charts
-        uses: helm/chart-releaser-action@v1.3.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
