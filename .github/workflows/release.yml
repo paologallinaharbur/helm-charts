@@ -21,7 +21,7 @@ jobs:
           ref: gh-pages
       - name: Download remote index file and check equality
         run: |
-          curl -vsSL https://newrelic.github.io/helm-charts/index.yaml > index.yaml.remote
+          curl -vsSL https://paologallinaharbur.github.io/helm-charts/index.yaml > index.yaml.remote
           test "$(md5sum < index.yaml)" = "$(md5sum < index.yaml.remote)"
 
   release:
@@ -55,14 +55,14 @@ jobs:
         run: |
           rm ./library/CHART-TEMPLATE/Chart.yaml
 
+      - name: Release workload charts
+        uses: helm/chart-releaser-action@v1.3.0
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
       - name: Release library charts
         uses: helm/chart-releaser-action@v1.3.0
         with:
           charts_dir: library
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Release workload charts
-        uses: helm/chart-releaser-action@v1.3.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
