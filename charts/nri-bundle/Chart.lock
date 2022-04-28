@@ -1,7 +1,7 @@
 dependencies:
 - name: newrelic-infrastructure
-  repository: file://../newrelic-infrastructure
-  version: 2.10.0
+  repository: https://newrelic.github.io/nri-kubernetes
+  version: 3.3.1
 - name: nri-prometheus
   repository: file://../nri-prometheus
   version: 1.14.0
@@ -23,11 +23,11 @@ dependencies:
 - name: newrelic-pixie
   repository: file://../newrelic-pixie
   version: 1.5.1
-- name: pixie-operator-helm2-chart
+- name: pixie-operator-chart
   repository: https://pixie-operator-charts.storage.googleapis.com
   version: 0.0.25
 - name: newrelic-infra-operator
   repository: file://../newrelic-infra-operator
   version: 0.6.0
-digest: sha256:75a984b4cacb9cdd9212873a992c8f2c9597ef61ec25693412697ac7bca5cd4e
-generated: "2022-04-25T12:12:30.719211+02:00"
+digest: sha256:058f76c69aab4fea795bf3e5c5484cd4bda4d0a907d31b35a0cf6760b07b82bb
+generated: "2022-04-28T15:55:55.268331+02:00"
